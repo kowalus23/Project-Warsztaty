@@ -1,19 +1,273 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Sit on Chair</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
 
-<body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sit on Chair</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,800&amp;subset=latin-ext">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header class="main-header">
+            <div class="container clearfix">
+                <h1 class="main-logo">
+                    <a href="">
+                        Sit <span>on</span> chair
+                    </a>
+                </h1>
+                <nav class="main-nav">
+                    <ul>
+                        <li>
+                            <a href="">O firmie</a>
+                            <ul class="main-nav-submenu">
+                                <li><a href="">Aktualności</a></li>
+                                <li><a href="">Nasz team</a></li>
+                                <li><a href="">Historia</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Galeria</a></li>
+                        <li><a href="">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header><!-- e: main-header -->
 
 
-    <script src="js/scripts.js"></script>
-</body>
+        <div class="main-banner-bg">
+            <div class="container">
+
+                <div class="main-slider" id="mainSlider">
+                    <div class="main-slider-slides-cnt">
+                        <div class="main-slider-slide active">
+                            <h2 class="slide1">Slide 1</h2>
+                        </div>
+                        <div class="main-slider-slide">
+                            <h2 class="slide2">Slide 2</h2>
+                        </div>
+                        <div class="main-slider-slide">
+                            <h2 class="slide3">Slide 3</h2>
+                        </div>
+                        <div class="main-slider-slide">
+                            <h2 class="slide4">Slide 4</h2>
+                        </div>
+                        <button class="main-slider-prev" onclick="plusDivs(-1)">
+                            <i class="fa fa-angle-left" aria-hidden="true" ></i>
+                        </button>
+                        <button class="main-slider-next" onclick="plusDivs(1)">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div><!-- e: main-banner-bg -->
+
+
+        <div class="main-articles">
+            <div class="container">
+                <h2 class="visuallyhidden">
+                    Artykuły
+                </h2>
+
+                <div class="row clearfix">
+                    <div class="col-1-3">
+                        <a href="" class="article-box">
+                            <img src="./images/box1_img.jpg" alt="">
+                            <div class="article-box-description">
+                                <h2 class="title">Chiar CLAIR</h2>
+                                <div class="article-box-description-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt totam omnis alias
+                                    incidunt officiis tempore itaque similique quisquam nisi cumque exercitationem
+                                    corporis iusto, quis, aliquam libero labore dolor quos adipisci.
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-1-3">
+                        <a href="" class="article-box">
+                            <img src="./images/box1_img.jpg" alt="">
+                            <div class="article-box-description">
+                                <h2 class="title">Chiar MARGERITA</h2>
+                                <div class="article-box-description-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt totam omnis alias
+                                    incidunt officiis tempore itaque similique quisquam nisi cumque exercitationem
+                                    corporis iusto, quis, aliquam libero labore dolor quos adipisci.
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-1-3">
+                        <a href="" class="article-box active">
+                            <img src="./images/box1_img.jpg" alt="">
+                            <div class="article-box-description">
+                                <h2 class="title">Lorem ipsum</h2>
+                                <div class="article-box-description-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt totam omnis alias
+                                    incidunt officiis tempore itaque similique quisquam nisi cumque exercitationem
+                                    corporis iusto, quis, aliquam libero labore dolor quos adipisci.
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div><!-- e: main-articles -->
+
+
+        <section class="main-prices">
+            <div class="container">
+                <h2 class="title">
+                    Cennik
+                </h2>
+                <div class="row">
+                    <div class="col col-1-3">
+                        <div class="price-list-box">
+                            <div class="price-list-box-square">
+                                <div class="price-list-box-dot">
+                                </div>
+                            </div>
+                            <h2 class="price-list-box-title">Basic plan</h2>
+                            <div class="price-list-box-price">
+                                <strong class="price-cnt">
+                                    <span class="price">85</span>
+                                    <sup class="small">99</sup>
+                                </strong>
+                                <div class="price-text">PLN / MSC</div>
+                            </div>
+                            <ul class="price-list-box-points">
+                                <li>Zakup towaru + dowóz</li>
+                                <li>Serwis</li>
+                            </ul>
+                            <div class="price-list-box-btn-cnt">
+                                <a href="" class="btn price-list-box-btn">Dołącz</a>
+                            </div>
+                        </div><!-- e: price-list-box -->
+                    </div><!-- e: col-1-3 -->
+
+                    <div class="col col-1-3">
+                        <div class="price-list-box active">
+                            <div class="price-list-box-square on-it-square">
+                                <div class="price-list-box-dot on-it-dot">
+
+                                </div>
+                            </div>
+                            <h2 class="price-list-box-title">Standard plan</h2>
+                            <div class="price-list-box-price">
+                                <strong class="price-cnt">
+                                    <span class="price">95</span>
+                                    <sup class="small">99</sup>
+                                </strong>
+                                <div class="price-text">PLN / MSC</div>
+                            </div>
+                            <ul class="price-list-box-points">
+                                <li>Zakup towaru + dowóz</li>
+                                <li>Serwis</li>
+                                <li>Gwarancja 5 lat</li>
+                            </ul>
+                            <div class="price-list-box-btn-cnt">
+                                <a href="" class="btn price-list-box-btn mid-btn">Dołącz</a>
+                            </div>
+                        </div><!-- e: price-list-box -->
+                    </div><!-- e: col-1-3 -->
+
+                    <div class="col col-1-3">
+                        <div class="price-list-box">
+                            <div class="price-list-box-square">
+                                <div class="price-list-box-dot">
+
+                                </div>
+                            </div>
+                            <h2 class="price-list-box-title">Advance plan</h2>
+                            <div class="price-list-box-price">
+                                <strong class="price-cnt">
+                                    <span class="price">211</span>
+                                    <sup class="small">00</sup>
+                                </strong>
+                                <div class="price-text">PLN / MSC</div>
+                            </div>
+                            <ul class="price-list-box-points">
+                                <li>Zakup towaru + dowóz</li>
+                                <li>Serwis</li>
+                                <li>Gwarancja 6 lat</li>
+                                <li>Porady projektanta</li>
+                            </ul>
+                            <div class="price-list-box-btn-cnt">
+                                <a href="" class="btn price-list-box-btn">Dołącz</a>
+                            </div>
+                        </div><!-- e: price-list-box -->
+                    </div><!-- e: col-1-3 -->
+                </div>
+            </div>
+        </section><!-- e: prices-section -->
+
+
+        <div class="main-contact">
+            <div class="container">
+                <h2 class="title">
+                    Kontakt
+                </h2>
+
+                <form action="" method="" class="main-contact-form clearfix">
+                    <div class="main-contact-form-left">
+                        <div class="main-contact-form-row">
+                            <label for="formName" class="visuallyhidden">Imię</label>
+                            <input type="text" id="formName" name="name" placeholder="Imię">
+                        </div>
+                        <div class="main-contact-form-row">
+                            <label for="formEmail" class="visuallyhidden">Email</label>
+                            <input type="email" id="formEmail" name="email" placeholder="Email">
+                        </div>
+                        <div class="main-contact-form-row">
+                            <label for="formMessage" class="visuallyhidden">Wiadomość</label>
+                            <textarea id="formMessage" name="message" placeholder="Wiadomość"></textarea>
+                        </div>
+                    </div>
+                    <div class="main-contact-form-right">
+
+                        <div class="main-contact-form-addon"></div>
+                        <div class="main-contact-form-row">
+                            <label class="checkbox-cnt">
+                                <input type="checkbox">
+                                <span class="checkbox-mark"></span>
+                                Zgadzam się na przetwarzanie danych osobowych
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn">Wyślij</button>
+                    </div>
+                </form>
+            </div>
+        </div><!-- e: main-contact -->
+
+        <footer class="main-footer">
+            <div class="container clearfix">
+                <h1 class="footer-logo">
+                    <a href="">
+                        Sit <span>on</span> chair
+                    </a>
+                </h1>
+                <div class="icons">
+                    <ul>
+                        <li><a href=""><img src="images/flickr.png" alt=""></a></li>
+                        <li><a href=""><img src="images/vimeo.png" alt=""></a></li>
+                        <li><a href=""><img src="images/pinterest.png" alt=""></a></li>
+                        <li><a href=""><img src="images/twitter.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <p class="copy-footer">Copyright 2014 | All Rights Reserved. - Sit On Chair</p>
+            </div>
+
+        </footer>
+    </body>
+    <script src="js/scripts.js" rel="script"></script>
 </html>
